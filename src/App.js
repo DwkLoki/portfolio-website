@@ -1,7 +1,9 @@
 import ProjectItem from './components/ProjectItem';
+import ExperienceSection from './components/ExperienceSection';
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className='my-10'>
-            <a href='https://drive.google.com/file/d/16YAMedh2aRPEUuL2xUjxNyMeqOYQb8fn/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px]">
+            <a href='https://drive.google.com/file/d/16YAMedh2aRPEUuL2xUjxNyMeqOYQb8fn/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
               Resume
             </a>
           </div>
@@ -31,7 +33,7 @@ function App() {
             💪
           </div>
           <h2 className="text-5xl font-bold w-1/2">
-            Berkontribusi dalam beberapa projek.
+            Berkontribusi dalam beberapa proyek.
           </h2>
         </div>
         <ProjectItem 
@@ -75,7 +77,64 @@ function App() {
         />
       </section>
 
-      <section className='relative mx-24 my-16'>
+      <section className='mx-24 my-44'>
+        <div className='flex space-x-5'>
+          <div className='text-8xl'>
+            🗂️
+          </div>
+          <h2 className="text-5xl font-bold w-1/3">
+            Daftar proyek penting lainnya.
+          </h2>
+        </div>
+        <div className='my-24 text-left'>
+          <table className='w-full'>
+            <thead>
+              <tr>
+                <th className='w-1/6 px-8 pt-4 pb-6'>Nama proyek</th>
+                <th className='w-2/6 px-8 pt-4 pb-6'>Keterangan</th>
+                <th className='w-2/6 px-8 pt-4 pb-6'>Tech stack</th>
+                <th className='w-1/6 px-8 pt-4 pb-6'>Link</th>
+              </tr>
+            </thead>
+            <tbody className='divide-y-2'>
+              <tr>
+                <td className='px-8 pt-4 pb-8'>Indiana</td>
+                <td className='px-8 pt-4 pb-8'>dhfjdsh idufisn ifsiufj jfsi fjssd jkdsfkjsdk kfjsdk f kdsfjskd</td>
+                <td className='px-8 pt-4 pb-8'>
+                  <ul className='flex flex-wrap text-xs'>
+                    <li className='after:content-["‣"] after:mx-2'>HTML</li>
+                    <li className='after:content-["‣"] after:mx-2'>CSS</li>
+                    <li className='after:content-["‣"] after:mx-2'>Javascript</li>
+                    <li className='after:content-["‣"] after:mx-2'>React</li>
+                    <li className='after:content-["‣"] after:mx-2'>Jquery</li>
+                    <li className='after:content-["‣"] after:mx-2'>Jquery</li>
+                    <li className='after:content-["‣"] after:mx-2'>Jquery</li>
+                    <li>Jquery</li>
+                  </ul>
+                </td>
+                <td className='px-8 pt-4 pb-8 flex space-x-5 text-xl'>
+                  <a href='#' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
+                  <a href='#' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                </td>
+              </tr>
+              <tr>
+                <td className='px-8 pt-4 pb-8'>Ohio</td>
+                <td className='px-8 pt-4 pb-8'>Columbus</td>
+                <td className='px-8 pt-4 pb-8'>Indiana</td>
+                <td className='px-8 pt-4 pb-8'>Indianapolis</td>
+              </tr>
+              <tr>
+                <td className='px-8 pt-4 pb-8'>Michigan</td>
+                <td className='px-8 pt-4 pb-8'>Detroit</td>
+                <td className='px-8 pt-4 pb-8'>Indiana</td>
+                <td className='px-8 pt-4 pb-8'>Indianapolis</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className='relative mx-24 h-screen'>
         <div className='flex flex-col justify-center items-center'>
           <div className='text-8xl my-6'>
             🤝
@@ -104,6 +163,11 @@ function App() {
           <img src='./images/pesawat-kertas.svg' alt='pesawat kertas'/>
         </div>
       </section>
+
+      <div className="min-h-screen bg-gray-50 p-6">
+        <h1 className="text-2xl font-bold text-center mb-6">My Work Experience</h1>
+        <ExperienceSection />
+      </div>
     </div>
   );
 }
