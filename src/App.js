@@ -11,7 +11,7 @@ function App() {
       <section className='relative h-screen mx-20'>
         <div className='flex flex-col h-full justify-center'>
           <p className="text-4xl text-gray-500 mb-4">
-            👋 Hai! Saya john doe ...
+            👋 Hai! Saya Dwiky Darmawansyah ...
           </p>
           <h1 className="text-6xl font-bold w-3/4 leading-[4.5rem]">
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
@@ -27,7 +27,21 @@ function App() {
         </div>
       </section>
 
-      <section className='mx-24 my-16'>
+      <section className='mx-24 mt-16'>
+        <div className='flex items-center space-x-5'>
+          <div className='text-8xl'>
+            ✨
+          </div>
+          <h2 className="text-5xl font-bold w-1/2">
+            Pengalaman kerja.
+          </h2>
+        </div>
+        <div className="mt-24 px-16">
+          <ExperienceSection />
+        </div>
+      </section>
+
+      <section className='mx-24 my-44'>
         <div className='flex space-x-5'>
           <div className='text-8xl'>
             💪
@@ -163,11 +177,6 @@ function App() {
           <img src='./images/pesawat-kertas.svg' alt='pesawat kertas'/>
         </div>
       </section>
-
-      <div className="min-h-screen bg-gray-50 p-6">
-        <h1 className="text-2xl font-bold text-center mb-6">My Work Experience</h1>
-        <ExperienceSection />
-      </div>
     </div>
   );
 }
