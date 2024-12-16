@@ -28,19 +28,19 @@ export default function ProjectItem(props) {
                     <div className='flex space-x-5 my-6 text-xl'>
                         {
                             link.gitlab &&
-                            <a href={link.gitlab} target='_blank' rel='noreferrer noopener'>
+                            <a className="hover:text-sky-500" href={link.gitlab} target='_blank' rel='noreferrer noopener'>
                                 <FiGitlab />
                             </a>
                         }
                         {
                             link.github &&
-                            <a href={link.github} target='_blank' rel='noreferrer noopener'>
+                            <a className="hover:text-sky-500" href={link.github} target='_blank' rel='noreferrer noopener'>
                                 <FiGithub />
                             </a>
                         }
                         {
                             link.preview &&
-                            <a href={link.preview} target='_blank' rel='noreferrer noopener'>
+                            <a className="hover:text-sky-500" href={link.preview} target='_blank' rel='noreferrer noopener'>
                                 <FiExternalLink />
                             </a>
                         }

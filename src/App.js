@@ -30,6 +30,44 @@ function App() {
       <section className='mx-24 mt-16'>
         <div className='flex items-center space-x-5'>
           <div className='text-8xl'>
+            😎
+          </div>
+          <h2 className="text-5xl font-bold w-fit">
+            Tentang saya.
+          </h2>
+        </div>
+        <div className="mt-16 flex">
+          <div className='flex flex-col space-y-3 w-2/3 text-justify'>
+            <p>
+              Hai! Nama saya Dwiky. Saya merupakan lulusan teknik informatika dan saat ini fokus di bidang frontend web development. 
+              Saya memiliki minat mendalam terhadap web development dan sangat menikmati hal-hal seperti menciptakan sesuatu yg berguna di internet atau mengimplementasikan desain UI/UX menjadi web yang fungsional.
+            </p>
+            <p>
+              Sejauh ini, saya belum pernah memiliki pengalaman kerja full time. Walau begitu, saya cukup beruntung semasa kuliah saya pernah bekerja secara part-time serta memiliki pengalaman praktik melalui proyek pribadi, kampus dan bootcamp. 
+              Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
+            </p>
+            <p>
+              Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis.
+            </p>
+            <p>
+              Berikut beberapa teknologi yang saya gunakan baru-baru ini:
+            </p>
+            <ul className=''>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>JavaScript (ES6+)</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>React</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>Tailwind</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>WordPress</li>
+            </ul>
+          </div>
+          <div className='w-1/3'>
+            <img src='./images/foto-profil.png' alt='foto profil'/>
+          </div>
+        </div>
+      </section>
+
+      <section className='mx-24 my-44'>
+        <div className='flex items-center space-x-5'>
+          <div className='text-8xl'>
             ✨
           </div>
           <h2 className="text-5xl font-bold w-1/2">
@@ -127,8 +165,8 @@ function App() {
                   </ul>
                 </td>
                 <td className='px-8 pt-4 pb-8 flex space-x-5 text-xl'>
-                  <a href='#' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
-                  <a href='#' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                  <a className='hover:text-sky-500' href='#' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
+                  <a className='hover:text-sky-500' href='#' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
                 </td>
               </tr>
               <tr>
@@ -158,18 +196,18 @@ function App() {
           </h2>
         </div>
         <p className='text-justify my-8 w-2/3 mx-auto'>
-          Meskipun saya masih seorang junior dengan pengalaman terbatas, saya memiliki semangat dan minat yang besar terhadap frontend web development dan tekad untuk terus belajar serta berkembang. Saya sadar bidang ini cepat berubah, karena itu saya berkomitmen untuk terus meningkatkan keterampilan saya.
+          Meskipun saya masih seorang junior dengan pengalaman terbatas, saya memiliki semangat dan minat yang besar terhadap frontend web development dan tekad untuk terus belajar serta berkembang.
           <br/><br/>
-          Saya memahami bahwa memberikan kesempatan kepada saya mungkin sebuah tantangan, tetapi saya percaya bahwa dengan potensi dan dedikasi saya, saya bisa menjadi junior frontend web developer terbaik yang pernah Anda rekrut.
+          Saya memahami bahwa memberikan kesempatan kepada saya mungkin sebuah tantangan bagi anda, tetapi saya percaya bahwa dengan potensi dan dedikasi saya, serta komitmen untuk terus meningkatkan keterampilan saya. saya bisa menjadi junior frontend web developer yang bisa anda andalkan.
         </p>
         <ul className='flex space-x-5 my-6 text-2xl justify-center'>
-          <li className='bg-yellow-200 p-2 rounded-lg'>
+          <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
             <a href='http://linkedin.com/in/dwiky-darmawansyah-1221a0200' target='_blank' rel='noreferrer noopener'><FaLinkedinIn /></a>
           </li>
-          <li className='bg-yellow-200 p-2 rounded-lg'>
+          <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
             <a href='mailto:dwiky.darmawansyah@gmail.com' target='_blank' rel='noreferrer noopener'><FiMail /></a>
           </li>
-          <li className='bg-yellow-200 p-2 rounded-lg'>
+          <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
             <a href='http://github.com/DwkLoki' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
           </li>
         </ul>

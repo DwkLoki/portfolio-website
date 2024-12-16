@@ -15,7 +15,7 @@ const ExperienceSection = () => {
                             onClick={() => setSelectedCompany(experience)}
                             className={`cursor-pointer p-4 text-sm ${selectedCompany.company === experience.company
                                     ? "border-l-4 border-sky-500 text-sky-500"
-                                    : "border-l-4 border-gray-300 text-gray-300 bg-white"
+                                    : "border-l-4 border-gray-400 text-gray-400 bg-white"
                                 } transition-all hover:bg-sky-50 hover:text-sky-500`}
                         >
                             {experience.company}
