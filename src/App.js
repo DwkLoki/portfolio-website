@@ -1,5 +1,6 @@
 import ProjectItem from './components/ProjectItem';
 import ExperienceSection from './components/ExperienceSection';
+import Navbar from './components/Navbar';
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
@@ -8,8 +9,9 @@ import { FiExternalLink } from "react-icons/fi";
 function App() {
   return (
     <div className="App font-inter">
+      <Navbar />
       <section className='relative h-screen mx-20'>
-        <div className='flex flex-col h-full justify-center'>
+        <div className='flex flex-col pt-40'>
           <p className="text-4xl text-gray-500 mb-4">
             👋 Hai! Saya Dwiky Darmawansyah ...
           </p>
@@ -27,7 +29,7 @@ function App() {
         </div>
       </section>
 
-      <section className='mx-24 mt-16'>
+      <section id='story' className='mx-24 pt-16'>
         <div className='flex items-center space-x-5'>
           <div className='text-8xl'>
             😎
@@ -65,7 +67,7 @@ function App() {
         </div>
       </section>
 
-      <section className='mx-24 my-44'>
+      <section id='experience' className='mx-24 pt-16 my-20'>
         <div className='flex items-center space-x-5'>
           <div className='text-8xl'>
             ✨
@@ -79,7 +81,7 @@ function App() {
         </div>
       </section>
 
-      <section className='mx-24 my-44'>
+      <section id='project' className='mx-24 pt-16 my-20'>
         <div className='flex space-x-5'>
           <div className='text-8xl'>
             💪
@@ -129,7 +131,7 @@ function App() {
         />
       </section>
 
-      <section className='mx-24 my-44'>
+      <section className='mx-24 pt-16'>
         <div className='flex space-x-5'>
           <div className='text-8xl'>
             🗂️
@@ -186,7 +188,7 @@ function App() {
         </div>
       </section>
 
-      <section className='relative mx-24 h-screen'>
+      <section id='contact' className='relative mx-24 pt-16 pb-16 mt-40'>
         <div className='flex flex-col justify-center items-center'>
           <div className='text-8xl my-6'>
             🤝
@@ -211,7 +213,7 @@ function App() {
             <a href='http://github.com/DwkLoki' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
           </li>
         </ul>
-        <div className='absolute w-1/3 -top-16 -right-6'>
+        <div className='absolute w-1/3 -top-3 -right-6'>
           <img src='./images/pesawat-kertas.svg' alt='pesawat kertas'/>
         </div>
       </section>
