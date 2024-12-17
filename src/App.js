@@ -9,13 +9,13 @@ import { FiExternalLink } from "react-icons/fi";
 function App() {
   return (
     <div className="App font-inter">
-      <Navbar />
-      <section className='relative h-screen mx-20'>
+      {/* <Navbar /> */}
+      {/* <section className='relative h-screen xl:mx-20 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex flex-col pt-40'>
-          <p className="text-4xl text-gray-500 mb-4">
+          <p className="lg:text-4xl text-gray-500 lg:mb-4 md:text-3xl sm:text-xl text-lg">
             👋 Hai! Saya Dwiky Darmawansyah ...
           </p>
-          <h1 className="text-6xl font-bold w-3/4 leading-[4.5rem]">
+          <h1 className="lg:text-6xl font-bold xl:w-3/4 lg:leading-[4.5rem] lg:w-[90%] md:text-5xl md:leading-[3.5rem] text-4xl leading-[2.75rem]">
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className='my-10'>
@@ -24,22 +24,22 @@ function App() {
             </a>
           </div>
         </div>
-        <div className='absolute w-4/5 top-0 -right-10'>
+        <div className='absolute w-4/5 top-0 -right-10 hidden xl:block'>
           <img src='./images/lampu-sorott.svg' alt='lampu sorot'/>
         </div>
-      </section>
+      </section> */}
 
-      <section id='story' className='mx-24 pt-16'>
+      {/* <section id='story' className='xl:mx-24 pt-16 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex items-center space-x-5'>
-          <div className='text-8xl'>
+          <div className='md:text-8xl text-6xl'>
             😎
           </div>
-          <h2 className="text-5xl font-bold w-fit">
+          <h2 className="md:text-5xl font-bold w-fit text-3xl">
             Tentang saya.
           </h2>
         </div>
-        <div className="mt-16 flex">
-          <div className='flex flex-col space-y-3 w-2/3 text-justify'>
+        <div className="lg:mt-16 flex lg:flex-row mt-10 flex-col">
+          <div className='flex flex-col space-y-3 lg:w-2/3 text-justify w-full'>
             <p>
               Hai! Nama saya Dwiky. Saya merupakan lulusan teknik informatika dan saat ini fokus di bidang frontend web development. 
               Saya memiliki minat mendalam terhadap web development dan sangat menikmati hal-hal seperti menciptakan sesuatu yg berguna di internet atau mengimplementasikan desain UI/UX menjadi web yang fungsional.
@@ -61,27 +61,27 @@ function App() {
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>WordPress</li>
             </ul>
           </div>
-          <div className='w-1/3'>
+          <div className='lg:w-1/3 md:w-2/5 w-2/3 mx-auto'>
             <img src='./images/foto-profil.png' alt='foto profil'/>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section id='experience' className='mx-24 pt-16 my-20'>
+      <section id='experience' className='xl:mx-24 pt-16 my-20 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex items-center space-x-5'>
-          <div className='text-8xl'>
+          <div className='md:text-8xl text-6xl'>
             ✨
           </div>
-          <h2 className="text-5xl font-bold w-1/2">
+          <h2 className="md:text-5xl font-bold w-1/2 text-3xl">
             Pengalaman kerja.
           </h2>
         </div>
-        <div className="mt-24 px-16">
+        <div className="md:mt-24 lg:px-16 md:px-10 sm:px-10 px-2 mt-10">
           <ExperienceSection />
         </div>
       </section>
 
-      <section id='project' className='mx-24 pt-16 my-20'>
+      {/* <section id='project' className='mx-24 pt-16 my-20'>
         <div className='flex space-x-5'>
           <div className='text-8xl'>
             💪
@@ -129,9 +129,9 @@ function App() {
             image : 'mockup-project3.png'
           }}
         />
-      </section>
+      </section> */}
 
-      <section className='mx-24 pt-16'>
+      {/* <section className='mx-24 pt-16'>
         <div className='flex space-x-5'>
           <div className='text-8xl'>
             🗂️
@@ -186,9 +186,9 @@ function App() {
             </tbody>
           </table>
         </div>
-      </section>
+      </section> */}
 
-      <section id='contact' className='relative mx-24 pt-16 pb-16 mt-40'>
+      {/* <section id='contact' className='relative mx-24 pt-16 pb-16 mt-40'>
         <div className='flex flex-col justify-center items-center'>
           <div className='text-8xl my-6'>
             🤝
@@ -216,7 +216,7 @@ function App() {
         <div className='absolute w-1/3 -top-3 -right-6'>
           <img src='./images/pesawat-kertas.svg' alt='pesawat kertas'/>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

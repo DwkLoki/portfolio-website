@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-500 ${isVisible ? "translate-y-0" : "-translate-y-full"} 
-            ${isTop ? "bg-transparent shadow-none" : "bg-white/70 backdrop-blur shadow-md"}`}
+            ${isTop ? "bg-transparent -z-0 shadow-none" : "bg-white/70 backdrop-blur shadow-md"}`}
         >
             <ul 
                 className="flex justify-center space-x-10 py-4 text-lg"
