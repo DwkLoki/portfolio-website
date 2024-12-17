@@ -67,7 +67,7 @@ function App() {
         </div>
       </section> */}
 
-      <section id='experience' className='xl:mx-24 pt-16 my-20 lg:mx-12 sm:mx-10 mx-5'>
+      {/* <section id='experience' className='xl:mx-24 pt-16 my-20 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex items-center space-x-5'>
           <div className='md:text-8xl text-6xl'>
             ✨
@@ -79,7 +79,7 @@ function App() {
         <div className="md:mt-24 lg:px-16 md:px-10 sm:px-10 px-2 mt-10">
           <ExperienceSection />
         </div>
-      </section>
+      </section> */}
 
       {/* <section id='project' className='mx-24 pt-16 my-20'>
         <div className='flex space-x-5'>
@@ -131,30 +131,30 @@ function App() {
         />
       </section> */}
 
-      {/* <section className='mx-24 pt-16'>
-        <div className='flex space-x-5'>
-          <div className='text-8xl'>
+      <section className='xl-24 pt-16 lg:mx-12 sm:mx-10 mx-5'>
+        <div className='flex items-center space-x-5'>
+          <div className='md:text-8xl text-6xl'>
             🗂️
           </div>
-          <h2 className="text-5xl font-bold w-1/3">
+          <h2 className="md:text-5xl font-bold xl:w-1/3 lg:w-2/4 md:w-2/3 text-3xl">
             Daftar proyek penting lainnya.
           </h2>
         </div>
-        <div className='my-24 text-left'>
+        <div className='md:my-24 text-left my-10'>
           <table className='w-full'>
             <thead>
               <tr>
-                <th className='w-1/6 px-8 pt-4 pb-6'>Nama proyek</th>
-                <th className='w-2/6 px-8 pt-4 pb-6'>Keterangan</th>
-                <th className='w-2/6 px-8 pt-4 pb-6'>Tech stack</th>
-                <th className='w-1/6 px-8 pt-4 pb-6'>Link</th>
+                <th className='md:w-1/6 md:px-8 md:pt-4 md:pb-6 w-4/6 px-5 pt-2 pb-3'>Nama proyek</th>
+                <th className='md:w-2/6 md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Keterangan</th>
+                <th className='md:w-2/6 md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Tech stack</th>
+                <th className='md:w-1/6 md:px-8 md:pt-4 md:pb-6 w-2/6 px-5 pt-2 pb-3'>Link</th>
               </tr>
             </thead>
             <tbody className='divide-y-2'>
               <tr>
-                <td className='px-8 pt-4 pb-8'>Indiana</td>
-                <td className='px-8 pt-4 pb-8'>dhfjdsh idufisn ifsiufj jfsi fjssd jkdsfkjsdk kfjsdk f kdsfjskd</td>
-                <td className='px-8 pt-4 pb-8'>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Indiana</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>dhfjdsh idufisn ifsiufj jfsi fjssd jkdsfkjsdk kfjsdk f kdsfjskd</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>
                   <ul className='flex flex-wrap text-xs'>
                     <li className='after:content-["‣"] after:mx-2'>HTML</li>
                     <li className='after:content-["‣"] after:mx-2'>CSS</li>
@@ -166,38 +166,38 @@ function App() {
                     <li>Jquery</li>
                   </ul>
                 </td>
-                <td className='px-8 pt-4 pb-8 flex space-x-5 text-xl'>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 flex space-x-5 text-xl'>
                   <a className='hover:text-sky-500' href='#' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
                   <a className='hover:text-sky-500' href='#' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
                 </td>
               </tr>
               <tr>
-                <td className='px-8 pt-4 pb-8'>Ohio</td>
-                <td className='px-8 pt-4 pb-8'>Columbus</td>
-                <td className='px-8 pt-4 pb-8'>Indiana</td>
-                <td className='px-8 pt-4 pb-8'>Indianapolis</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Ohio</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Columbus</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Indiana</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Indianapolis</td>
               </tr>
               <tr>
-                <td className='px-8 pt-4 pb-8'>Michigan</td>
-                <td className='px-8 pt-4 pb-8'>Detroit</td>
-                <td className='px-8 pt-4 pb-8'>Indiana</td>
-                <td className='px-8 pt-4 pb-8'>Indianapolis</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Michigan</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Detroit</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Indiana</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Indianapolis</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section id='contact' className='relative mx-24 pt-16 pb-16 mt-40'>
+      {/* <section id='contact' className='relative xl-24 py-16 mt-40 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex flex-col justify-center items-center'>
-          <div className='text-8xl my-6'>
+          <div className='md:text-8xl my-6 text-6xl'>
             🤝
           </div>
-          <h2 className="text-5xl font-bold">
+          <h2 className="md:text-5xl font-bold text-3xl">
             Hubungi saya.
           </h2>
         </div>
-        <p className='text-justify my-8 w-2/3 mx-auto'>
+        <p className='text-justify my-8 md:w-2/3 md:mx-auto'>
           Meskipun saya masih seorang junior dengan pengalaman terbatas, saya memiliki semangat dan minat yang besar terhadap frontend web development dan tekad untuk terus belajar serta berkembang.
           <br/><br/>
           Saya memahami bahwa memberikan kesempatan kepada saya mungkin sebuah tantangan bagi anda, tetapi saya percaya bahwa dengan potensi dan dedikasi saya, serta komitmen untuk terus meningkatkan keterampilan saya. saya bisa menjadi junior frontend web developer yang bisa anda andalkan.
@@ -213,7 +213,7 @@ function App() {
             <a href='http://github.com/DwkLoki' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
           </li>
         </ul>
-        <div className='absolute w-1/3 -top-3 -right-6'>
+        <div className='absolute lg:w-1/3 lg:-top-3 lg:-right-6 sm:top-4 sm:-right-6 sm:w-2/5 sm:block hidden'>
           <img src='./images/pesawat-kertas.svg' alt='pesawat kertas'/>
         </div>
       </section> */}
