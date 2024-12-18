@@ -9,7 +9,7 @@ import { FiExternalLink } from "react-icons/fi";
 function App() {
   return (
     <div className="App font-inter">
-      {/* <Navbar /> */}
+      <Navbar />
       <section className='relative h-screen xl:mx-20 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex flex-col pt-40'>
           <p className="lg:text-4xl text-gray-500 lg:mb-4 md:text-3xl sm:text-xl text-lg">
