@@ -7,15 +7,15 @@ const ExperienceSection = () => {
     return (
         <div className="flex flex-col md:flex-row">
             {/* Sidebar: List of Companies */}
-            <div className="w-full md:w-1/3 pr-6">
-                <ul>
+            <div className="w-full md:w-1/3 md:pr-6 pb-4">
+                <ul className="md:flex-col flex">
                     {experiences.map((experience, index) => (
                         <li
                             key={index}
                             onClick={() => setSelectedCompany(experience)}
-                            className={`cursor-pointer p-4 text-sm ${selectedCompany.company === experience.company
-                                    ? "border-l-4 border-sky-500 text-sky-500"
-                                    : "border-l-4 border-gray-400 text-gray-400 bg-white"
+                            className={`cursor-pointer p-4 text-sm md:justify-start flex items-center justify-center ${selectedCompany.company === experience.company
+                                    ? "md:border-l-4 md:border-b-0 w-full border-b-4 border-sky-500 text-sky-500"
+                                    : "md:border-l-4 md:border-b-0 w-full border-b-4 border-gray-400 text-gray-400 bg-white"
                                 } transition-all hover:bg-sky-50 hover:text-sky-500`}
                         >
                             {experience.company}

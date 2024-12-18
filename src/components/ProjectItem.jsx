@@ -7,10 +7,10 @@ export default function ProjectItem(props) {
 
     return (
         <>
-            <div className='flex my-24'>
-                <div className={image === 'mockup-project3.png' ? 'w-3/5' : 'w-2/5'}>
+            <div className='flex my-24 lg:flex-row lg:border-0 lg:rounded-none lg:p-0 lg:shadow-none flex-col-reverse border rounded-lg p-4 shadow-xl'>
+                <div className={image === 'mockup-project3.png' ? 'lg:w-3/5' : 'lg:w-2/5'}>
                     <a href={link.preview} target='_blank' rel='noreferrer noopener'>
-                        <h3 className='text-3xl font-medium w-fit'>
+                        <h3 className='text-3xl font-medium w-fit lg:pt-0 pt-6'>
                             {title}
                         </h3>
                         <div className='text-xl'>{subTitle}</div>
@@ -46,7 +46,7 @@ export default function ProjectItem(props) {
                         }
                     </div>
                 </div>
-                <div className={image === 'mockup-project3.png' ? 'w-2/5' : 'w-3/5'}>
+                <div className={image === 'mockup-project3.png' ? 'lg:w-2/5' : 'lg:w-3/5'}>
                     <a href={link.preview} target='_blank' rel='noreferrer noopener'>
                         <img src={`./images/${image}`} alt='mockup project jalin' />
                     </a>
