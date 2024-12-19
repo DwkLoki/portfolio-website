@@ -56,12 +56,12 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed flex items-center justify-between top-0 left-0 right-0 z-50 bg-white p-5 shadow-md transition-all duration-500 ${isVisible ? "translate-y-0" : "-translate-y-full"} 
-            ${isTop ? "bg-transparent -z-10 shadow-none" : "bg-white/70 backdrop-blur shadow-md"}`}
+            className={`fixed lg:justify-center flex items-center justify-between top-0 left-0 right-0 bg-white p-5 shadow-md transition-all duration-500 ${isVisible ? "translate-y-0" : "-translate-y-full"} 
+            ${isTop ? "bg-transparent z-10 shadow-none" : "bg-white/70 backdrop-blur z-30 shadow-md"}`}
         >
-            <h1 className="text-3xl font-medium text-sky-500">Portfolio</h1>
+            <h1 className="lg:hidden text-3xl font-medium text-sky-500">Portfolio</h1>
             <button
-                className="relative text-4xl text-sky-500 w-12 h-12 flex items-center justify-center overflow-hidden z-20"
+                className="lg:hidden relative text-4xl text-sky-500 w-12 h-12 flex items-center justify-center overflow-hidden z-20"
                 onClick={handleMenu}
             >
                 <div
@@ -85,6 +85,7 @@ const Navbar = () => {
                                 duration={500}
                                 className="text-lg font-medium text-black hover:text-sky-500 cursor-pointer"
                                 activeClass="text-sky-500"
+                                onClick={() => setIsOpen(false)} // Menutup menu saat item diklik
                             >
                                 {section}
                             </Link>
@@ -102,8 +103,8 @@ const Navbar = () => {
             {/* <button className="text-4xl text-sky-500 relative overflow-hidden" onClick={handleMenu}>
                 {isOpen ? <FiX /> : <FiMenu />}
             </button> */}
-            {/* <ul 
-                className="flex justify-center space-x-10 py-4 text-lg"
+            <ul 
+                className="lg:flex justify-center space-x-10 py-4 text-lg hidden"
             >
                 {["Story", "Experience", "Project", "Contact"].map((section) => (
                     <li key={section}>
@@ -118,7 +119,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                 ))}
-            </ul> */}
+            </ul>
         </nav>
     );
 };

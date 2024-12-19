@@ -24,12 +24,12 @@ function App() {
             </a>
           </div>
         </div>
-        <div className='absolute w-4/5 top-0 -right-10 hidden xl:block'>
+        <div className='absolute w-4/5 top-0 -right-10 z-20 hidden xl:block pointer-events-none'>
           <img src='./images/lampu-sorott.svg' alt='lampu sorot'/>
         </div>
       </section>
 
-      <section id='story' className='xl:mx-24 pt-16 mt-56 lg:mt-0 lg:mx-12 sm:mx-10 mx-5'>
+      <section id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-56 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
         <div className='flex items-center space-x-5'>
           <div className='md:text-8xl text-6xl'>
             😎
