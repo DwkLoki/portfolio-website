@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { FiGitlab } from "react-icons/fi";
 
 export default function ProjectItem(props) {
-    const {title, subTitle, desc, techStack, link, image} = props.projectItem
+    const {title, subTitle, desc, reward, techStack, link, image} = props.projectItem
 
     return (
         <>
@@ -20,6 +20,7 @@ export default function ProjectItem(props) {
                             {desc}
                         </p>
                         <br />
+                        {reward && <div className="pb-3">{reward}</div>}
                         <div className='text-black font-medium'>TECH STACK & TOOLS:</div>
                         <p>
                             {techStack}

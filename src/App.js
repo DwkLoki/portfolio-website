@@ -41,11 +41,22 @@ function App() {
         <div className="lg:mt-16 flex lg:flex-row mt-10 flex-col">
           <div className='flex flex-col space-y-3 lg:w-2/3 text-justify w-full'>
             <p>
-              Hai! Nama saya Dwiky. Saya merupakan lulusan teknik informatika dan saat ini fokus di bidang frontend web development. 
+              Hai! Nama saya Dwiky. Saya merupakan lulusan
+                <span className='relative group'> 
+                  <span> </span>
+                  <span className='text-sky-500 underline'>teknik informatika</span>
+                  <span> </span>
+                  <img
+                    src="./images/wisuda.jpg"
+                    alt="gambar terhover"
+                    className="absolute left-20 -top-40 invisible group-hover:visible opacity-0 group-hover:opacity-100 transform transition-all duration-300"
+                  />
+                </span>
+              dan saat ini fokus di bidang frontend web development. 
               Saya memiliki minat mendalam terhadap web development dan sangat menikmati hal-hal seperti menciptakan sesuatu yg berguna di internet atau mengimplementasikan desain UI/UX menjadi web yang fungsional.
             </p>
             <p>
-              Sejauh ini, saya belum pernah memiliki pengalaman kerja full time. Walau begitu, saya cukup beruntung semasa kuliah saya pernah bekerja secara part-time serta memiliki pengalaman praktik melalui proyek pribadi, kampus dan bootcamp. 
+              Sejauh ini, saya belum pernah memiliki pengalaman kerja full time. Walau begitu, saya cukup beruntung semasa kuliah saya <span className='bg-sky-200'>pernah bekerja secara part-time</span> serta <span className='bg-sky-200'>memiliki pengalaman praktik</span> melalui proyek pribadi, kampus dan bootcamp. 
               Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
             </p>
             <p>
@@ -96,6 +107,17 @@ function App() {
             subTitle : 'Final Project SYNRGY Academy Batch 2',
             desc : 'Mengusung tema “Gamification in Banking: How Banks Make Their Apps Engaging”. Dalam proyek ini, saya berperan sebagai frontend developer. JALIN adalah aplikasi perbankan dengan fitur gamifikasi.',
             techStack : 'ReactJS, SASS, Reactstrap, Bootstrap, React Router, Redux, Echarts',
+            reward : [
+              <span className='relative group'> 
+                <span className='text-black'>Reward: 🏆 </span>
+                <span className='text-sky-500 underline'>Tim Terbaik</span>
+                <img
+                  src="./images/reward-synrgy.png"
+                  alt="gambar terhover"
+                  className="absolute left-20 -top-40 invisible group-hover:visible opacity-0 group-hover:opacity-100 transform transition-all duration-300"
+                />
+              </span>
+            ],
             link : {
               gitlab : 'https://gitlab.com/binarxsynrgy-2_mainbootcamp/finalprojectsynrgy/team-c/frontend',
               preview : 'https://bankjalin.vercel.app'
