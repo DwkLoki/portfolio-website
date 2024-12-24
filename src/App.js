@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import ProjectItem from './components/ProjectItem';
 import ExperienceSection from './components/ExperienceSection';
 import Navbar from './components/Navbar';
@@ -6,31 +7,72 @@ import { FiMail } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 
+const useScrollAnimation = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.1 } // Elemen dianggap terlihat jika 10% masuk viewport
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+
+    return [ref, isVisible];
+};
+
 function App() {
+  const [isLoad, setIsLoad] = useState(false);
+  const [section2Ref, section2Visible] = useScrollAnimation();
+  const [section3Ref, section3Visible] = useScrollAnimation();
+  const [section4Ref, section4Visible] = useScrollAnimation();
+  const [section5Ref, section5Visible] = useScrollAnimation();
+  const [section6Ref, section6Visible] = useScrollAnimation();
+  
+  useEffect(() => {
+    // Setelah komponen dimuat, atur isLoad menjadi true untuk memulai animasi fade-in
+    setIsLoad(true);
+    console.log(`${window.scrollY} = useeffect app1`);
+  }, []);
+
   return (
     <div className="App font-inter">
       <Navbar />
       <section className='relative h-screen xl:mx-20 lg:mx-12 sm:mx-10 mx-5'>
-        <div className='flex flex-col pt-40'>
-          <p className="lg:text-4xl text-gray-500 lg:mb-4 md:text-3xl sm:text-xl text-lg">
+        <div className='flex flex-col lg:pt-40 pt-10'>
+          <p className={`lg:text-4xl text-gray-500 lg:mb-4 md:text-3xl sm:text-xl text-lg transition-all duration-1000 ease-out transform delay-[1400ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
             👋 Hai! Saya Dwiky Darmawansyah ...
           </p>
-          <h1 className="lg:text-6xl font-bold xl:w-3/4 lg:leading-[4.5rem] lg:w-[90%] md:text-5xl md:leading-[3.5rem] text-4xl leading-[2.75rem]">
+          <h1 className={`lg:text-6xl font-bold xl:w-3/4 lg:leading-[4.5rem] lg:w-[90%] md:text-5xl md:leading-[3.5rem] text-4xl leading-[2.75rem] transition-all duration-1000 ease-out transform delay-[1600ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
-          <div className='my-10'>
+          <div className={`my-10 transition-all duration-1000 ease-out transform delay-[1800ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
             <a href='https://drive.google.com/file/d/16YAMedh2aRPEUuL2xUjxNyMeqOYQb8fn/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
               Resume
             </a>
           </div>
         </div>
-        <div className='absolute w-4/5 top-0 -right-10 z-20 hidden xl:block pointer-events-none'>
+        <div className={`absolute w-4/5 top-0 -right-10 z-20 hidden xl:block pointer-events-none transition-all duration-1000 ease-out transform delay-[2000ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <img src='./images/lampu-sorott.svg' alt='lampu sorot'/>
         </div>
       </section>
 
-      <section id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-56 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
-        <div className='flex items-center space-x-5'>
+      <section ref={section2Ref} id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-56 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
+        <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section2Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
             😎
           </div>
@@ -38,7 +80,7 @@ function App() {
             Tentang saya.
           </h2>
         </div>
-        <div className="lg:mt-16 flex lg:flex-row mt-10 flex-col">
+        <div className={`lg:mt-16 flex lg:flex-row mt-10 flex-col transition-all duration-1000 ease-out transform delay-1000 ${section2Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='flex flex-col space-y-3 lg:w-2/3 text-justify w-full'>
             <p>
               Hai! Nama saya Dwiky. Saya merupakan lulusan
@@ -78,8 +120,8 @@ function App() {
         </div>
       </section>
 
-      <section id='experience' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
-        <div className='flex items-center space-x-5'>
+      <section ref={section3Ref} id='experience' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
+        <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section3Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
             ✨
           </div>
@@ -87,13 +129,13 @@ function App() {
             Pengalaman kerja.
           </h2>
         </div>
-        <div className="md:mt-24 lg:px-16 md:px-10 sm:px-10 px-2 mt-10">
+        <div className={`md:mt-24 lg:px-16 md:px-10 sm:px-10 px-2 mt-10 transition-all duration-1000 ease-out transform delay-1000 ${section3Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <ExperienceSection />
         </div>
       </section>
 
-      <section id='project' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
-        <div className='flex space-x-5 items-center'>
+      <section ref={section4Ref} id='project' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
+        <div className={`flex space-x-5 items-center transition-all duration-1000 ease-out transform delay-500 ${section4Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
             💪
           </div>
@@ -122,7 +164,8 @@ function App() {
               gitlab : 'https://gitlab.com/binarxsynrgy-2_mainbootcamp/finalprojectsynrgy/team-c/frontend',
               preview : 'https://bankjalin.vercel.app'
             },
-            image : 'mockup-project1.png'
+            image : 'mockup-project1.png',
+            animation : section4Visible
           }}
         />
         <ProjectItem 
@@ -135,7 +178,8 @@ function App() {
               github : 'https://github.com/DwkLoki/doit-SibCapstoneProject',
               preview : 'http://doit-sib-project.web.app'
             },
-            image : 'mockup-project2.png'
+            image : 'mockup-project2.png',
+            animation : section4Visible
           }}
         />
         <ProjectItem 
@@ -148,13 +192,14 @@ function App() {
               github : 'https://github.com/DwkLoki/jadwal-uhm-pso',
               preview : 'http://sistem-penjadwalan-uhm.vercel.app'
             },
-            image : 'mockup-project3.png'
+            image : 'mockup-project3.png',
+            animation : section4Visible
           }}
         />
       </section>
 
-      <section className='xl:mx-24 lg:pt-16 lg:mx-12 sm:mx-10 pt-10 mx-5'>
-        <div className='flex items-center space-x-5'>
+      <section ref={section5Ref} className='xl:mx-24 lg:pt-16 lg:mx-12 sm:mx-10 pt-10 mx-5'>
+        <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section5Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
             🗂️
           </div>
@@ -162,7 +207,7 @@ function App() {
             Daftar proyek penting lainnya.
           </h2>
         </div>
-        <div className='md:my-24 text-left my-10'>
+        <div className={`md:my-24 text-left my-10 transition-all duration-1000 ease-out transform delay-1000 ${section5Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <table className='w-full'>
             <thead>
               <tr>
@@ -210,8 +255,8 @@ function App() {
         </div>
       </section>
 
-      <section id='contact' className='relative xl:mx-24 py-16 lg:mt-40 lg:mx-12 sm:mx-10 mt-20 mx-5'>
-        <div className='flex flex-col justify-center items-center'>
+      <section ref={section6Ref} id='contact' className='relative xl:mx-24 py-16 lg:mt-40 lg:mx-12 sm:mx-10 mt-20 mx-5'>
+        <div className={`flex flex-col justify-center items-center transition-all duration-1000 ease-out transform delay-500 ${section6Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl my-6 text-6xl'>
             🤝
           </div>
@@ -219,12 +264,12 @@ function App() {
             Hubungi saya.
           </h2>
         </div>
-        <p className='text-justify my-8 md:w-2/3 md:mx-auto'>
+        <p className={`text-justify my-8 md:w-2/3 md:mx-auto transition-all duration-1000 ease-out transform delay-1000 ${section6Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           Meskipun saya masih seorang junior dengan pengalaman terbatas, saya memiliki semangat dan minat yang besar terhadap frontend web development dan tekad untuk terus belajar serta berkembang.
           <br/><br/>
           Saya memahami bahwa memberikan kesempatan kepada saya mungkin sebuah tantangan bagi anda, tetapi saya percaya bahwa dengan potensi dan dedikasi saya, serta komitmen untuk terus meningkatkan keterampilan saya. saya bisa menjadi junior frontend web developer yang bisa anda andalkan.
         </p>
-        <ul className='flex space-x-5 my-6 text-2xl justify-center'>
+        <ul className={`flex space-x-5 my-6 text-2xl justify-center transition-all duration-1000 ease-out transform delay-[1500ms] ${section6Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
             <a href='http://linkedin.com/in/dwiky-darmawansyah-1221a0200' target='_blank' rel='noreferrer noopener'><FaLinkedinIn /></a>
           </li>
@@ -235,7 +280,7 @@ function App() {
             <a href='http://github.com/DwkLoki' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
           </li>
         </ul>
-        <div className='absolute lg:w-1/3 lg:-top-3 lg:-right-6 sm:top-4 sm:-right-6 sm:w-2/5 sm:block hidden'>
+        <div className={`absolute lg:w-1/3 lg:-top-3 lg:-right-6 sm:top-4 sm:-right-6 sm:w-2/5 sm:block hidden transition-all duration-1000 ease-out transform delay-[1600ms] ${section6Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16 translate-x-16"}`}>
           <img src='./images/pesawat-kertas.svg' alt='pesawat kertas'/>
         </div>
       </section>

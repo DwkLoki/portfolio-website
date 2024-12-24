@@ -3,11 +3,11 @@ import { FiExternalLink } from "react-icons/fi";
 import { FiGitlab } from "react-icons/fi";
 
 export default function ProjectItem(props) {
-    const {title, subTitle, desc, reward, techStack, link, image} = props.projectItem
+    const {title, subTitle, desc, reward, techStack, link, image, animation} = props.projectItem
 
     return (
         <>
-            <div className='flex my-24 lg:flex-row lg:border-0 lg:rounded-none lg:p-0 lg:shadow-none flex-col-reverse border rounded-lg p-4 shadow-xl'>
+            <div className={`flex my-24 lg:flex-row lg:border-0 lg:rounded-none lg:p-0 lg:shadow-none flex-col-reverse border rounded-lg p-4 shadow-xl transition-all duration-1000 ease-out transform delay-1000 ${animation ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
                 <div className={image === 'mockup-project3.png' ? 'lg:w-3/5' : 'lg:w-2/5'}>
                     <a href={link.preview} target='_blank' rel='noreferrer noopener'>
                         <h3 className='text-3xl font-medium w-fit lg:pt-0 pt-6'>

@@ -8,8 +8,15 @@ const Navbar = () => {
     const [isTop, setIsTop] = useState(true); // Untuk memeriksa apakah navbar di posisi atas
     const [isOpen, setIsOpen] = useState(false);
     const [isRotating, setIsRotating] = useState(false);
+    const [isLoad, setIsLoad] = useState(false);
 
     useEffect(() => {
+        // Setelah komponen dimuat, atur isLoad menjadi true untuk memulai animasi fade-in pada daftar menu
+        setIsLoad(true);
+        console.log(`${window.scrollY} = useeffect navbar1`);
+    }, []);
+
+    useEffect(() => {    
         const handleScroll = () => {
             if (window.scrollY > lastScrollY) {
                 // Scroll down
@@ -24,8 +31,9 @@ const Navbar = () => {
 
             setLastScrollY(window.scrollY);
         };
-
+        
         window.addEventListener("scroll", handleScroll);
+        console.log(`${window.scrollY} = useeffect navbar2 woi`);
         return () => window.removeEventListener("scroll", handleScroll);
     }, [lastScrollY]);
 
@@ -35,12 +43,11 @@ const Navbar = () => {
         } else {
             document.body.style.overflow = "auto"; // Enable scroll
         }
-
+        console.log(`${window.scrollY} = useeffect navbar3`);
         return () => {
             document.body.style.overflow = "auto"; // Clean up overflow on unmount
         };
     }, [isOpen]); // Effect runs whenever isOpen changes
-
 
     // const handleMenu = () => {
     //     setIsOpen(!isOpen)
@@ -100,19 +107,21 @@ const Navbar = () => {
             >
             </div>
             
-            {/* <button className="text-4xl text-sky-500 relative overflow-hidden" onClick={handleMenu}>
-                {isOpen ? <FiX /> : <FiMenu />}
-            </button> */}
+            {/* menu pada tampilan large */}
             <ul 
                 className="lg:flex justify-center space-x-10 py-4 text-lg hidden"
             >
-                {["Story", "Experience", "Project", "Contact"].map((section) => (
+                {["Story", "Experience", "Project", "Contact"].map((section, index) => (
                     <li key={section}>
                         <Link
                             to={section.toLowerCase()}
                             smooth={true}
                             duration={500}
-                            className="cursor-pointer text-black hover:text-sky-500"
+                            className={`cursor-pointer text-black hover:text-sky-500 transform ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
+                            style={{
+                                // transitionDelay: `${(index + 1) * 200}ms`, // Gunakan inline style untuk delay dinamis
+                                transition: `color 0ms, opacity 1000ms ease-out ${(index + 1) * 300}ms, transform 1000ms ease-out ${(index + 1) * 300}ms`
+                            }}
                             activeClass="text-sky-500"
                         >
                             {section}
