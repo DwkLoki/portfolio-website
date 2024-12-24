@@ -71,7 +71,7 @@ function App() {
         </div>
       </section>
 
-      <section ref={section2Ref} id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-56 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
+      <section ref={section2Ref} id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-20 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
         <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section2Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
             😎
