@@ -53,7 +53,7 @@ function App() {
     <div className="App font-inter">
       <Navbar />
       <section className='relative h-screen xl:mx-20 lg:mx-12 sm:mx-10 mx-5'>
-        <div className='flex flex-col lg:pt-40 pt-10'>
+        <div className='flex flex-col lg:pt-40 pt-32'>
           <p className={`lg:text-4xl text-gray-500 lg:mb-4 md:text-3xl sm:text-xl text-lg transition-all duration-1000 ease-out transform delay-[1400ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
             👋 Hai! Saya Dwiky Darmawansyah ...
           </p>
@@ -219,36 +219,56 @@ function App() {
             </thead>
             <tbody className='divide-y-2'>
               <tr>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Indiana</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>dhfjdsh idufisn ifsiufj jfsi fjssd jkdsfkjsdk kfjsdk f kdsfjskd</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Info Covid</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>cari tahu semua tentang covid termasuk pantau statistik covid di wilayah indonesia</td>
                 <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>
                   <ul className='flex flex-wrap text-xs'>
-                    <li className='after:content-["‣"] after:mx-2'>HTML</li>
-                    <li className='after:content-["‣"] after:mx-2'>CSS</li>
                     <li className='after:content-["‣"] after:mx-2'>Javascript</li>
                     <li className='after:content-["‣"] after:mx-2'>React</li>
-                    <li className='after:content-["‣"] after:mx-2'>Jquery</li>
-                    <li className='after:content-["‣"] after:mx-2'>Jquery</li>
-                    <li className='after:content-["‣"] after:mx-2'>Jquery</li>
-                    <li>Jquery</li>
+                    <li className='after:content-["‣"] after:mx-2'>React icons</li>
+                    <li>Vercel</li>
                   </ul>
                 </td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 flex space-x-5 text-xl'>
-                  <a className='hover:text-sky-500' href='#' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
-                  <a className='hover:text-sky-500' href='#' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 text-xl'>
+                  <div className="flex space-x-5">
+                    <a className='hover:text-sky-500' href='https://github.com/DwkLoki/covid-info-app' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
+                    <a className='hover:text-sky-500' href='https://infocovidapp.vercel.app' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Ohio</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Columbus</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Indiana</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Indianapolis</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Bookshelf app</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Aplikasi untuk menyimpan daftar buku dan menandai yang sudah dibaca</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>
+                  <ul className='flex flex-wrap text-xs'>
+                    <li className='after:content-["‣"] after:mx-2'>Javascript</li>
+                    <li className='after:content-["‣"] after:mx-2'>Vercel</li>
+                    <li>Browser local storage</li>
+                  </ul>
+                </td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 text-xl'>
+                  <div className="flex space-x-5">
+                    <a className='hover:text-sky-500' href='https://github.com/DwkLoki/bookshelfApp' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
+                    <a className='hover:text-sky-500' href='https://bookshelf-app-zeta.vercel.app' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                  </div>
+                </td>
               </tr>
               <tr>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Michigan</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Detroit</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Indiana</td>
-                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Indianapolis</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Kelurahan Berua</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Web profil kelurahan berua</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>
+                  <ul className='flex flex-wrap text-xs'>
+                    <li className='after:content-["‣"] after:mx-2'>Javascript</li>
+                    <li className='after:content-["‣"] after:mx-2'>React</li>
+                    <li>Vercel</li>
+                  </ul>
+                </td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 text-xl'>
+                  <div className="flex space-x-5">
+                    <a className='hover:text-sky-500' href='https://github.com/DwkLoki/profil-kelurahan-berua' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
+                    <a className='hover:text-sky-500' href='https://kelurahanberua.vercel.app' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>

@@ -66,7 +66,9 @@ const Navbar = () => {
             className={`fixed lg:justify-center flex items-center justify-between top-0 left-0 right-0 bg-white p-5 shadow-md transition-all duration-500 ${isVisible ? "translate-y-0" : "-translate-y-full"} 
             ${isTop ? "bg-transparent z-10 shadow-none" : "bg-white/70 backdrop-blur z-30 shadow-md"}`}
         >
-            <h1 className="lg:hidden text-3xl font-medium text-sky-500">Portfolio</h1>
+            <h1 className="lg:hidden text-3xl font-medium text-sky-500">
+                Portfolio
+            </h1>
             <button
                 className="lg:hidden relative text-4xl text-sky-500 w-12 h-12 flex items-center justify-center overflow-hidden z-20"
                 onClick={handleMenu}
