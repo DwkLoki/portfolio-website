@@ -57,7 +57,7 @@ function App() {
           <p className={`lg:text-4xl text-gray-500 lg:mb-4 md:text-3xl sm:text-xl text-lg transition-all duration-1000 ease-out transform delay-[1400ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
             👋 Hai! Saya Dwiky Darmawansyah ...
           </p>
-          <h1 className={`lg:text-6xl font-bold xl:w-3/4 lg:leading-[4.5rem] lg:w-[90%] md:text-5xl md:leading-[3.5rem] text-4xl leading-[2.75rem] transition-all duration-1000 ease-out transform delay-[1600ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
+          <h1 className={`lg:text-6xl font-bold xl:w-3/4 lg:leading-[4.5rem] lg:w-[90%] md:leading-[3.5rem] text-5xl leading-[3rem] transition-all duration-1000 ease-out transform delay-[1600ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className={`my-10 transition-all duration-1000 ease-out transform delay-[1800ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
