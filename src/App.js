@@ -61,7 +61,7 @@ function App() {
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className={`my-10 transition-all duration-1000 ease-out transform delay-[1800ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
-            <a href='https://drive.google.com/file/d/16YAMedh2aRPEUuL2xUjxNyMeqOYQb8fn/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
+            <a href='https://drive.google.com/file/d/1NshiLNdJKJvtnlTODExLPTn1HyXH0d8e/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
               Resume
             </a>
           </div>
@@ -71,7 +71,7 @@ function App() {
         </div>
       </section>
 
-      <section ref={section2Ref} id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-20 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
+      <section ref={section2Ref} id='story' className='xl:mx-24 xl:mt-10 pt-16 mt-16 lg:mt-40 lg:mx-12 sm:mx-10 mx-5'>
         <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section2Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
             😎
@@ -102,7 +102,7 @@ function App() {
               Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
             </p>
             <p>
-              Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis.
+              Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis serta <span className='bg-sky-200'>mencari kesempatan untuk berkontribusi di industri teknologi.</span>
             </p>
             <p>
               Berikut beberapa teknologi yang saya gunakan baru-baru ini:
