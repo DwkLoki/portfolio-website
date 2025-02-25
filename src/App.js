@@ -292,7 +292,7 @@ function App() {
         </p>
         <ul className={`flex space-x-5 my-6 text-2xl justify-center transition-all duration-1000 ease-out transform delay-[1500ms] ${section6Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
-            <a href='http://linkedin.com/in/dwiky-darmawansyah-1221a0200' target='_blank' rel='noreferrer noopener'><FaLinkedinIn /></a>
+            <a href='http://linkedin.com/in/dwiky-darmawansyah' target='_blank' rel='noreferrer noopener'><FaLinkedinIn /></a>
           </li>
           <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
             <a href='mailto:dwiky.darmawansyah@gmail.com' target='_blank' rel='noreferrer noopener'><FiMail /></a>
