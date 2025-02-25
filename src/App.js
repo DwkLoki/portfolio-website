@@ -109,8 +109,9 @@ function App() {
             </p>
             <ul className=''>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>JavaScript (ES6+)</li>
+                            <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>TypeScript</li>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>React</li>
-              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>Tailwind</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>TailwindCSS</li>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>WordPress</li>
             </ul>
           </div>
@@ -145,10 +146,24 @@ function App() {
         </div>
         <ProjectItem 
           projectItem = {{
+            title : 'Sistem Penjadwalan Perkuliahan Universitas Handayani Makassar',
+            subTitle : 'Proyek Pribadi',
+            desc : 'Sistem ini hadir untuk mengatasi berbagai permasalahan penjadwalan perkuliahan pada Universitas Handayani Makassar yang masih dilakukan secara manual. Jadwal yang dihasilkan dengan cara manual, memerlukan waktu kurang lebih 3 hari dan memungkinkan terjadinya kesalahan dengan intensitas yang cukup banyak',
+            techStack : 'Javascript (ES6), React, TailwindCSS, Reactstrap, React Router, Redux',
+            link : {
+              github : 'https://github.com/DwkLoki/penjadwalan-perkuliahan-uhm-v2',
+              preview : 'https://penjadwalan-perkuliahan-uhm-v2.vercel.app'
+            },
+            image : 'mockup-project3.png',
+            animation : section4Visible
+          }}
+        />
+        <ProjectItem 
+          projectItem = {{
             title : 'JALIN',
             subTitle : 'Final Project SYNRGY Academy Batch 2',
             desc : 'Mengusung tema “Gamification in Banking: How Banks Make Their Apps Engaging”. Dalam proyek ini, saya berperan sebagai frontend developer. JALIN adalah aplikasi perbankan dengan fitur gamifikasi.',
-            techStack : 'ReactJS, SASS, Reactstrap, Bootstrap, React Router, Redux, Echarts',
+            techStack : 'React, SASS, Reactstrap, Bootstrap, React Router, Redux, Echarts',
             reward : [
               <span className='relative group'> 
                 <span className='text-black'>Reward: 🏆 </span>
@@ -179,20 +194,6 @@ function App() {
               preview : 'http://doit-sib-project.web.app'
             },
             image : 'mockup-project2.png',
-            animation : section4Visible
-          }}
-        />
-        <ProjectItem 
-          projectItem = {{
-            title : 'Sistem Penjadwalan Perkuliahan Universitas Handayani Makassar',
-            subTitle : 'Proyek Kampus',
-            desc : 'Sistem ini hadir untuk mengatasi berbagai permasalahan penjadwalan perkuliahan pada Universitas Handayani Makassar yang masih dilakukan secara manual. Jadwal yang dihasilkan dengan cara manual, memerlukan waktu kurang lebih 3 hari dan memungkinkan terjadinya kesalahan dengan intensitas yang cukup banyak',
-            techStack : 'HTML, CSS, Javascript, Bootstrap, JQuery',
-            link : {
-              github : 'https://github.com/DwkLoki/jadwal-uhm-pso',
-              preview : 'http://sistem-penjadwalan-uhm.vercel.app'
-            },
-            image : 'mockup-project3.png',
             animation : section4Visible
           }}
         />
