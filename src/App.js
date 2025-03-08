@@ -61,7 +61,7 @@ function App() {
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className={`my-10 transition-all duration-1000 ease-out transform delay-[1800ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
-            <a href='https://drive.google.com/file/d/1NshiLNdJKJvtnlTODExLPTn1HyXH0d8e/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
+            <a href='https://drive.google.com/file/d/1Z3Wq9rs6S0PZ70M-A4Ns3PT8WgeJK1YS/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
               Resume
             </a>
           </div>
@@ -292,7 +292,7 @@ function App() {
         </p>
         <ul className={`flex space-x-5 my-6 text-2xl justify-center transition-all duration-1000 ease-out transform delay-[1500ms] ${section6Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
-            <a href='http://linkedin.com/in/dwiky-darmawansyah' target='_blank' rel='noreferrer noopener'><FaLinkedinIn /></a>
+            <a href='http://linkedin.com/in/dwikydarmawansyah' target='_blank' rel='noreferrer noopener'><FaLinkedinIn /></a>
           </li>
           <li className='cursor-pointer bg-yellow-200 p-2 rounded-lg relative top-0 left-0 border-2 border-black transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[""] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[42px] before:hover:w-[42px] before:duration-300'>
             <a href='mailto:dwiky.darmawansyah@gmail.com' target='_blank' rel='noreferrer noopener'><FiMail /></a>
