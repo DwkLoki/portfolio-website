@@ -98,21 +98,26 @@ function App() {
               Saya memiliki minat mendalam terhadap web development dan sangat menikmati hal-hal seperti menciptakan sesuatu yg berguna di internet atau mengimplementasikan desain UI/UX menjadi web yang fungsional.
             </p>
             <p>
-              Sejauh ini, saya belum pernah memiliki pengalaman kerja full time. Walau begitu, saya cukup beruntung semasa kuliah saya <span className='bg-sky-200'>pernah bekerja secara part-time</span> serta <span className='bg-sky-200'>memiliki pengalaman praktik</span> melalui proyek pribadi, kampus dan bootcamp. 
+              Sejauh ini, saya belum pernah memiliki pengalaman kerja full time sebagai Frontend Web Developer. Walau begitu, saya cukup beruntung semasa kuliah saya <span className='bg-sky-200'>pernah bekerja secara part-time</span> serta <span className='bg-sky-200'>memiliki pengalaman praktik</span> melalui proyek pribadi, kampus dan bootcamp. 
               Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
             </p>
             <p>
-              Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis serta <span className='bg-sky-200'>mencari kesempatan untuk berkontribusi di industri teknologi.</span>
+                Sepanjang tahun 2024, saya bekerja sebagai Warehouse Records Officer di Telkomsel Warehouse sambil konsisten mengembangkan skill frontend development dengan membangun ulang dan mengimplementasikan teknologi baru pada project yang pernah saya buat sebelumnya. Pengalaman ini mengasah kemampuan manajemen waktu dan disiplin diri saya.
+            </p>
+            <p>
+              Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis serta <span className='bg-sky-200'>mencari kesempatan untuk berkontribusi dan bertumbuh di industri teknologi.</span>
             </p>
             <p>
               Berikut beberapa teknologi yang saya gunakan baru-baru ini:
             </p>
             <ul className=''>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>JavaScript (ES6+)</li>
-                            <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>TypeScript</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>TypeScript</li>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>React</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>NextJS</li>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>TailwindCSS</li>
               <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>WordPress</li>
+              <li className='relative text-justify pl-8 mb-3 before:absolute before:content-["‣"] before:left-0 before:-top-2 before:text-3xl before:text-sky-500'>Vite</li>
             </ul>
           </div>
           <div className='lg:w-1/3 md:w-2/5 w-2/3 mx-auto'>
@@ -151,7 +156,7 @@ function App() {
             desc : 'Sistem ini hadir untuk mengatasi berbagai permasalahan penjadwalan perkuliahan pada Universitas Handayani Makassar yang masih dilakukan secara manual. Jadwal yang dihasilkan dengan cara manual, memerlukan waktu kurang lebih 3 hari dan memungkinkan terjadinya kesalahan dengan intensitas yang cukup banyak',
             techStack : 'Javascript (ES6), React, TailwindCSS, Reactstrap, React Router, Redux',
             link : {
-              github : 'https://github.com/DwkLoki/penjadwalan-perkuliahan-uhm-v2',
+              github : 'https://github.com/DwkLoki/penjadwalan-perkuliahan-uhm-v2-using-typescript',
               preview : 'https://penjadwalan-perkuliahan-uhm-v2.vercel.app'
             },
             image : 'mockup-project3.png',
