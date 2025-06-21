@@ -61,7 +61,7 @@ function App() {
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className={`my-10 transition-all duration-1000 ease-out transform delay-[1800ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
-            <a href='https://drive.google.com/file/d/1tkDhzvpF7U9PC95OX_PrG2qKRrxdUR66/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
+            <a href='https://drive.google.com/file/d/15bV4KFpUWb5UhKWjJOOymV--na0JXWid/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
               Resume
             </a>
           </div>
@@ -100,9 +100,6 @@ function App() {
             <p>
               Sejauh ini, saya belum pernah memiliki pengalaman kerja full time sebagai Frontend Web Developer. Walau begitu, saya <span className='bg-sky-200'>memiliki pengalaman praktik</span> melalui proyek pribadi, kampus dan bootcamp serta <span className='bg-sky-200'>pernah bekerja secara part-time</span> semasa kuliah. 
               Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
-            </p>
-            <p>
-                Sepanjang 2024, saya bekerja sebagai Warehouse Records Officer di Telkomsel Warehouse sambil secara konsisten menyempurnakan keahlian frontend development melalui refaktor proyek lama dengan teknologi terkini. Pengalaman paralel ini mempertajam kemampuan manajemen waktu dan penerapan disiplin profesional saya.
             </p>
             <p>
               Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis serta <span className='bg-sky-200'>mencari kesempatan untuk berkontribusi pada transformasi digital dan perkembangan perusahaan.</span>

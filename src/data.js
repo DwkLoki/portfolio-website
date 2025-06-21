@@ -1,14 +1,5 @@
 const experiences = [
     {
-        company: "PT Pos Indonesia (Persero)",
-        role: "Warehouse Records Officer - KCU Makassar, Contract Employee",
-        duration: "Februari 2024 - Februari 2025",
-        description: [
-            "Memelihara catatan yang akurat tentang inventaris Telkomsel yang masuk dan keluar, serta memastikan manajemen stok yang tepat dan sesuai dengan standar perusahaan.",
-            "Mempersiapkan dan meninjau neraca gudang bulanan untuk melacak tingkat stok dan mengidentifikasi ketidaksesuaian.",
-        ],
-    },
-    {
         company: "Dicoding Indonesia",
         role: "Mentor SIB Dicoding X Kampus Merdeka Batch 4, Part-time",
         duration: "Februari 2023 - Juni 2023",
