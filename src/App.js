@@ -61,7 +61,7 @@ function App() {
             saya mampu mengkonversi desain yang rumit menjadi halaman web yang fungsional
           </h1>
           <div className={`my-10 transition-all duration-1000 ease-out transform delay-[1800ms] ${isLoad ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
-            <a href='https://drive.google.com/file/d/15bV4KFpUWb5UhKWjJOOymV--na0JXWid/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
+            <a href='https://drive.google.com/file/d/1NZiGpsa5nPQZ-TbAC6Q8_EbbQKmYF29L/view?usp=sharing' class="relative font-medium top-0 left-0 bg-yellow-200 py-3 px-10 border-2 border-black rounded-lg transition-all duration-300 before:absolute before:top-0 before:left-0 before:-z-[1] before:h-full before:w-full before:bg-black before:rounded-lg before:transition-all before:content-[''] hover:-top-1 hover:-left-1 before:hover:top-1 before:hover:left-1 before:hover:h-[46px] before:hover:w-[142px] before:duration-300">
               Resume
             </a>
           </div>
@@ -97,13 +97,15 @@ function App() {
               dan saat ini fokus di bidang frontend web development. 
               Saya memiliki minat mendalam terhadap web development dan sangat menikmati hal-hal seperti menciptakan sesuatu yg berguna di internet atau mengimplementasikan desain UI/UX menjadi web yang fungsional.
             </p>
-            <p>
+            <p>Setelah lulus pada Desember 2023, saya merasa kemampuan saya sebagai frontend developer masih belum siap untuk industri. Karena itu, saya memutuskan untuk memperkuat skill terlebih dahulu. Di tengah proses belajar, saya mendapat tawaran untuk bekerja sebagai staf gudang di Telkomsel Warehouse (melalui Kantor Pos) selama satu tahun. Walaupun peran ini berada di luar bidang teknologi, pengalaman tersebut membantu saya mengembangkan disiplin kerja profesional dan manajemen waktu, sambil tetap melanjutkan pembelajaran dan mengerjakan proyek sampingan di waktu luang.</p>
+            <p>Sejak Februari 2025, setelah kontrak kerja selesai, saya sepenuhnya fokus mengembangkan karier sebagai frontend web developer dengan membangun berbagai proyek, memperkuat portofolio, dan mempelajari teknologi modern agar selalu relevan dengan kebutuhan industri.</p>
+            {/* <p>
               Sejauh ini, saya belum pernah memiliki pengalaman kerja full time sebagai Frontend Web Developer. Walau begitu, saya <span className='bg-sky-200'>memiliki pengalaman praktik</span> melalui proyek pribadi, kampus dan bootcamp serta <span className='bg-sky-200'>pernah bekerja secara part-time</span> semasa kuliah. 
               Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
             </p>
             <p>
               Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis serta <span className='bg-sky-200'>mencari kesempatan untuk berkontribusi pada transformasi digital dan perkembangan perusahaan.</span>
-            </p>
+            </p> */}
             <p>
               Berikut beberapa teknologi yang saya gunakan baru-baru ini:
             </p>
@@ -127,20 +129,6 @@ function App() {
         </div>
       </section>
 
-      <section ref={section3Ref} id='experience' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
-        <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section3Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
-          <div className='md:text-8xl text-6xl'>
-            ✨
-          </div>
-          <h2 className="md:text-5xl font-bold w-1/2 text-3xl">
-            Pengalaman kerja.
-          </h2>
-        </div>
-        <div className={`md:mt-24 lg:px-16 md:px-10 sm:px-10 px-2 mt-10 transition-all duration-1000 ease-out transform delay-1000 ${section3Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
-          <ExperienceSection />
-        </div>
-      </section>
-
       <section ref={section4Ref} id='project' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
         <div className={`flex space-x-5 items-center transition-all duration-1000 ease-out transform delay-500 ${section4Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
           <div className='md:text-8xl text-6xl'>
@@ -150,6 +138,20 @@ function App() {
             Berkontribusi dalam beberapa proyek.
           </h2>
         </div>
+        <ProjectItem 
+          projectItem = {{
+            title : 'Betewe',
+            subTitle : 'Proyek Pribadi',
+            desc : 'BETEWE adalah platform diskusi online yang dirancang khusus untuk mahasiswa S1. Di sini, mahasiswa bisa saling bertanya, berbagi jawaban, dan berdiskusi layaknya forum akademik modern. BETEWE hadir untuk membantu mahasiswa menemukan solusi dari permasalahan kuliah, mengasah kemampuan berpikir kritis, sekaligus membangun komunitas belajar yang kolaboratif.',
+            techStack : 'React, TailwindCSS, Axios, React Router, React Lucide, Lexical, Node.js, Express.js, PostgreSQL, Sequelize, JWT, Bcrypt, Multer',
+            link : {
+              github : 'https://github.com/DwkLoki/betewe',
+              preview : 'https://betewe.vercel.app'
+            },
+            image : 'mockup-project4.png',
+            animation : section4Visible
+          }}
+        />
         <ProjectItem 
           projectItem = {{
             title : 'Sistem Penjadwalan Perkuliahan Universitas Handayani Makassar',
@@ -225,6 +227,28 @@ function App() {
               </tr>
             </thead>
             <tbody className='divide-y-2'>
+                <tr>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Just For Fun Projects</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>Kumpulan proyek kecil yang dibuat secara mandiri di waktu luang. Sebagian besar bersifat eksperimental, menyenangkan, dan menjadi wadah untuk menjelajahi berbagai tools, library, atau ide-ide acak.</td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>
+                  <ul className='flex flex-wrap text-xs'>
+                    <li className='after:content-["‣"] after:mx-2'>TypeScript</li>
+                    <li className='after:content-["‣"] after:mx-2'>React</li>
+                    <li className='after:content-["‣"] after:mx-2'>TailwindCSS</li>
+                    <li className='after:content-["‣"] after:mx-2'>React Lucide</li>
+                    <li className='after:content-["‣"] after:mx-2'>React Router</li>
+                    <li className='after:content-["‣"] after:mx-2'>React Confetti</li>
+                    <li className='after:content-["‣"] after:mx-2'>Html2Canvas</li>
+                    <li>Vercel</li>
+                  </ul>
+                </td>
+                <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 text-xl'>
+                  <div className="flex space-x-5">
+                    <a className='hover:text-sky-500' href='https://github.com/DwkLoki/just-for-fun-projects' target='_blank' rel='noreferrer noopener'><FiGithub /></a>
+                    <a className='hover:text-sky-500' href='https://just-for-fun-projects.vercel.app' target='_blank' rel='noreferrer noopener'><FiExternalLink /></a>
+                  </div>
+                </td>
+              </tr>
               <tr>
                 <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3'>Info Covid</td>
                 <td className='md:px-8 md:pt-4 md:pb-6 px-5 pt-2 pb-3 md:table-cell hidden'>cari tahu semua tentang covid termasuk pantau statistik covid di wilayah indonesia</td>
@@ -279,6 +303,20 @@ function App() {
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section ref={section3Ref} id='experience' className='xl:mx-24 lg:pt-16 my-20 lg:mx-12 sm:mx-10 pt-10 mx-5'>
+        <div className={`flex items-center space-x-5 transition-all duration-1000 ease-out transform delay-500 ${section3Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
+          <div className='md:text-8xl text-6xl'>
+            ✨
+          </div>
+          <h2 className="md:text-5xl font-bold w-1/2 text-3xl">
+            Pengalaman kerja.
+          </h2>
+        </div>
+        <div className={`md:mt-24 lg:px-16 md:px-10 sm:px-10 px-2 mt-10 transition-all duration-1000 ease-out transform delay-1000 ${section3Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}>
+          <ExperienceSection />
         </div>
       </section>
 
