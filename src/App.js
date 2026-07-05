@@ -97,15 +97,15 @@ function App() {
               dan saat ini fokus di bidang frontend web development. 
               Saya memiliki minat mendalam terhadap web development dan sangat menikmati hal-hal seperti menciptakan sesuatu yg berguna di internet atau mengimplementasikan desain UI/UX menjadi web yang fungsional.
             </p>
-            <p>Setelah lulus pada Desember 2023, saya merasa kemampuan saya sebagai frontend developer masih belum siap untuk industri. Karena itu, saya memutuskan untuk memperkuat skill terlebih dahulu. Di tengah proses belajar, saya mendapat tawaran untuk bekerja sebagai staf gudang di Telkomsel Warehouse (melalui Kantor Pos) selama satu tahun. Walaupun peran ini berada di luar bidang teknologi, pengalaman tersebut membantu saya mengembangkan disiplin kerja profesional dan manajemen waktu, sambil tetap melanjutkan pembelajaran dan mengerjakan proyek sampingan di waktu luang.</p>
-            <p>Sejak Februari 2025, setelah kontrak kerja selesai, saya sepenuhnya fokus mengembangkan karier sebagai frontend web developer dengan membangun berbagai proyek, memperkuat portofolio, dan mempelajari teknologi modern agar selalu relevan dengan kebutuhan industri.</p>
-            {/* <p>
+            {/* <p>Setelah lulus pada Desember 2023, saya merasa kemampuan saya sebagai frontend developer masih belum siap untuk industri. Karena itu, saya memutuskan untuk memperkuat skill terlebih dahulu. Di tengah proses belajar, saya mendapat tawaran untuk bekerja sebagai staf gudang di Telkomsel Warehouse (melalui Kantor Pos) selama satu tahun. Walaupun peran ini berada di luar bidang teknologi, pengalaman tersebut membantu saya mengembangkan disiplin kerja profesional dan manajemen waktu, sambil tetap melanjutkan pembelajaran dan mengerjakan proyek sampingan di waktu luang.</p>
+            <p>Sejak Februari 2025, setelah kontrak kerja selesai, saya sepenuhnya fokus mengembangkan karier sebagai frontend web developer dengan membangun berbagai proyek, memperkuat portofolio, dan mempelajari teknologi modern agar selalu relevan dengan kebutuhan industri.</p> */}
+            <p>
               Sejauh ini, saya belum pernah memiliki pengalaman kerja full time sebagai Frontend Web Developer. Walau begitu, saya <span className='bg-sky-200'>memiliki pengalaman praktik</span> melalui proyek pribadi, kampus dan bootcamp serta <span className='bg-sky-200'>pernah bekerja secara part-time</span> semasa kuliah. 
               Karena itu saya memiliki pengetahuan yang mumpuni dalam membangun web modern.
             </p>
             <p>
               Fokus saya saat ini adalah berusaha tetap update terhadap perkembangan di bidang frontend web development, baik dari sisi pengetahuan maupun keterampilan teknis serta <span className='bg-sky-200'>mencari kesempatan untuk berkontribusi pada transformasi digital dan perkembangan perusahaan.</span>
-            </p> */}
+            </p>
             <p>
               Berikut beberapa teknologi yang saya gunakan baru-baru ini:
             </p>
